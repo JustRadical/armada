@@ -11,7 +11,6 @@ dnf5 -y install --setopt=install_weak_deps=False \
     gamescope \
     vulkan-loader \
     vulkan-tools \
-    gamemode \
     gtk2 \
     openal-soft \
     xorg-x11-server-Xwayland \
