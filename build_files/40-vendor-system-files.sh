@@ -40,6 +40,7 @@ systemctl enable armada-bootimg-sync.service
 systemctl enable armada-flatpak-setup.service
 systemctl enable armada-waydroid-input.path
 systemctl disable waydroid-container.service
+systemctl enable falcond.service
 
 # Updates are manual (Steam UI / steamos-update). The base image enables this
 # timer, which would auto-pull multi-GB images on metered tethering. Opt in with

@@ -200,7 +200,7 @@ def main():
         print(f"armada-game-launch: controller repair skipped: {exc}", file=sys.stderr)
 
     try:
-        os.execv(args[0], args)
+        os.execv(args[0], [game_id] + args[1:])
     except OSError as exc:
         raise SystemExit(f"armada-game-launch: failed to exec game: {exc}")
 
